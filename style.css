@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(120, 25%, 89%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategrey;
+    color: hsl(120, 25%, 89%);
+    padding: 1em;
+}
+#git{
+   text-decoration: none;
+    color: hsl(120, 25%, 89%);;
+}
+.head_image{
+    width:4em;
+    height:4em;
+    border-radius: 50%;
+}
+
+.container{
+    display: relative;
+    max-width: 70%;
+    margin: auto;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    height: 85vh;
+    border: black 2px solid;
+}
+
+.carousel_container{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: nowrap;    
+}
+
+.carousel_items{
+    width: 100%;
+}
+
+.images{
+   width:70vw;
+   height: 78vh;
+}
+.text{
+    text-align: center;
+}

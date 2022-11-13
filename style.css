@@ -19,7 +19,8 @@ header{
 }
 #git{
    text-decoration: none;
-    color: hsl(120, 25%, 89%);;
+    color: hsl(120, 25%, 89%);
+    cursor: pointer;
 }
 .head_image{
     width:4em;
@@ -28,13 +29,14 @@ header{
 }
 
 .container{
-    display: relative;
+    position: relative;
     max-width: 70%;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 5px;
     height: 85vh;
     border: black 2px solid;
+    margin-bottom: 1em;
 }
 
 .carousel_container{
@@ -44,13 +46,74 @@ header{
 }
 
 .carousel_items{
-    width: 100%;
+    width:70vw;
 }
-
+.hidden, .carousel_items{
+    display:none;
+}
+.visible{
+    display: block;
+    animation: fade 1.5s;
+}
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
 .images{
    width:70vw;
    height: 78vh;
 }
 .text{
     text-align: center;
+}
+.buttons{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    /* z-index: 2; */
+}
+.keys{
+    padding: 0.7em;
+    border-radius: 40%;
+    background-color: darkslategray;
+    color: hsl(120, 25%, 89%);
+    font-size: 1em;
+    font-weight: bolder;
+    border: 0;
+    cursor: pointer;
+}
+#prev{
+    margin-left: 0.4em;
+}
+#next{
+    margin-right: 0.4em;
+}
+footer{
+    background-color: hsl(180, 6%, 7%);
+    text-align: center;
+    color: hsl(120, 25%, 89%);
+    font-size: 0.9em;
+    margin-top: auto;
+    padding: 1.5em;
+
+}
+footer>p{
+    line-height: 1em;
+    text-align: center;
+    margin: 1em auto;
+    background-color: hsl(120, 25%, 89%);
+    color: hsl(180, 67%, 8%);
+    width:50%;
+    font-weight: bolder;
+    padding:0.7em;
+    border-radius: 10px;
 }

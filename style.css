@@ -9,6 +9,19 @@ body{
     flex-direction: column;
     background-color: hsl(120, 25%, 89%);
 }
+@media only screen and (max-width:600px){
+    header>h1{
+        font-size: 150%;
+    }
+    p{
+        font-size: 70%;
+        font-weight: bolder;
+    }
+    blockquote{
+        font-size: 80%;
+    }
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -68,6 +81,14 @@ header{
    width:70vw;
    height: 78vh;
 }
+/* @media only screen and(min-width:900px ){
+    .carousel_items{
+        width: 50vw;
+    }
+    .images{
+        width: 60vw;
+    } 
+} */
 .text{
     text-align: center;
 }

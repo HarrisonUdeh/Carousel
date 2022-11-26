@@ -20,6 +20,12 @@ body{
     blockquote{
         font-size: 80%;
     }
+    #cont{
+        height: 55vh;
+    }
+    #img{
+        height: 50vh;
+    }
 }
 
 header{
@@ -81,6 +87,7 @@ header{
    width:70vw;
    height: 78vh;
 }
+
 /* @media only screen and(min-width:900px ){
     .carousel_items{
         width: 50vw;
@@ -99,19 +106,37 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
-    /* z-index: 2; */
+    /* display: none; */
+    /* z-index:1; */
 }
+
 .keys{
+    display: none;
     padding: 0.7em;
     border-radius: 40%;
-    background-color: darkslategray;
-    color: hsl(120, 25%, 89%);
+    background-color: inherit;
+    /* background-color:darkslategray */
+    /* color: hsl(120, 25%, 89%); */
+    color: inherit;
     font-size: 1em;
     font-weight: bolder;
     border: 0;
     cursor: pointer;
 }
+.hover{
+    background-color:darkslategray;
+    color:hsl(120, 25%, 89%);
+    padding: 0.7em;
+    border-radius: 40%;
+    font-size: 1em;
+    font-weight: bolder;
+    border: 0;
+    cursor: pointer; 
+}
+.keys:hover{
+    background-color:darkslategray;
+    color:hsl(120, 25%, 89%); 
+} 
 #prev{
     margin-left: 0.4em;
 }
@@ -125,7 +150,7 @@ footer{
     font-size: 0.9em;
     margin-top: auto;
     padding: 1.5em;
-
+    margin-bottom: 0;
 }
 footer>p{
     line-height: 1em;

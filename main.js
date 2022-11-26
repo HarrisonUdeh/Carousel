@@ -36,3 +36,41 @@ function moveToPrevSlide(){
     console.log('hi')
     updateSlidePoition();
 }
+
+// document.getElementById('cont').addEventListener('mouseover', function(){ alert("Hello World!")
+// ; 
+// })
+document.getElementById('cont').addEventListener('mouseover', function(){ hover(keyP)
+; 
+})
+let keyP = document.getElementsByClassName('keys')
+console.log(keyP)
+
+function hover(keyP){
+    document.getElementById("prev").classList.remove('keys')
+    document.getElementById("next").classList.remove('keys')
+    document.getElementById("prev").classList.add('hover')
+    document.getElementById("next").classList.add('hover')
+    
+    // alert(keyP.className);
+
+    // if (keyP.className == "keys"){
+        
+        
+    //     // keyP.classList.add("hover");
+    //     // keyP.classList.remove("keys");
+    //     // //keyP.className="hover";
+    //     // //keyP.className.toggle("hover");
+    //     // alert(keyP.className);
+    // }
+
+    
+    // if (keyP.className == 'keys'){
+    //     keyP.className = 'hover';
+    //     console.log(keyP.className)
+    // }
+    
+}
+
+
+ 
